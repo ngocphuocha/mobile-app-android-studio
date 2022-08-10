@@ -2,6 +2,7 @@ package com.example.com1786tcd0401firstapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -10,6 +11,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
