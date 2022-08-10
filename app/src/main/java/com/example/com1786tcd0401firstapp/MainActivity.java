@@ -3,13 +3,17 @@ package com.example.com1786tcd0401firstapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.graphics.Color;
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.view.View;
+import java.util.jar.Attributes;
 
-import java.util.Random;
+
 
 public class MainActivity extends AppCompatActivity {
+    private EditText nameText;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -19,26 +23,16 @@ public class MainActivity extends AppCompatActivity {
 
         TextView helloText = findViewById(R.id.textHello);
 
-        TextView markPoint = findViewById(R.id.markPoint);
-        helloText.setText("Hello world");
+        nameText = (EditText) findViewById(R.id.name);
+    }
 
-        int mark = 0;
+    public void handleButtonClick(View view) {
+        String strName = nameText.getText().toString();
 
-        Random r = new Random();
-        mark = r.nextInt(100);
-        mark += 1;
+        Intent i = new Intent(this, NameDisplay.class);
 
-        markPoint.setText("" + mark); // Display mark point
+        i.putExtra(NameDisplay.NAME, strName);
 
-        if (mark < 50) {
-            helloText.setText("Sorry you failed");
-            helloText.setTextColor(Color.RED);
-        } else if (mark > 70) {
-            helloText.setText("Brilliant, you got a distinction");
-            helloText.setTextColor(Color.parseColor("#239B56"));
-        } else {
-            helloText.setText("Well done you passed");
-            helloText.setTextColor(Color.GREEN);
-        }
+        startActivity(i);
     }
 }
