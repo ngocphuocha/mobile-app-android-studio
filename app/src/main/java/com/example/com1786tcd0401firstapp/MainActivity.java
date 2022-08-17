@@ -13,8 +13,6 @@ import java.util.jar.Attributes;
 
 
 public class MainActivity extends AppCompatActivity {
-    private EditText nameText;
-
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
