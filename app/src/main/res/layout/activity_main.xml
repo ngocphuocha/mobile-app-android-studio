@@ -10,37 +10,13 @@
         android:id="@+id/textHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="132dp"
         android:text="Hello World!"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="358dp"
-        android:layout_height="42dp"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textHello"
-        tools:layout_editor_absoluteX="26dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:onClick="handleButtonClick"
-        android:text="@string/button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHello"
-        app:layout_constraintVertical_bias="0.259" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

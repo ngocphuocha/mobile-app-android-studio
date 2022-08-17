@@ -20,19 +20,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        TextView helloText = findViewById(R.id.textHello);
-
-        nameText = (EditText) findViewById(R.id.name);
-    }
-
-    public void handleButtonClick(View view) {
-        String strName = nameText.getText().toString();
-
-        Intent i = new Intent(this, NameDisplay.class);
-
-        i.putExtra(NameDisplay.NAME, strName);
-
-        startActivity(i);
     }
 }
