@@ -3,4 +3,9 @@
     <string name="mark_point">Mark point!</string>
     <string name="button">Button</string>
     <string name="hello">Hello</string>
+    <string name="work_status">Work Status</string>
+    <string name="date_of_birth">Date of birth:</string>
+    <string name="click_here_to_show_date_of_birth">Click here to show date of birth</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
